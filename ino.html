@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Card Showcase</title>
+  <style>
+    body {
+      background-color: #000000;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #333333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .navbar h1 {
+      color: #ffffff;
+      margin: 0;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      flex: 0 0 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-image {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .card-description {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .card-price {
+      font-size: 16px;
+      font-weight: bold;
+      color: #ff0000;
+    }
+    
+	@media (max-width: 900px) {
+      .card {
+      flex: 0 0 calc(50% - 15px);
+      max-width: calc(50% - 15px);
+    }
+	
+    .card a {
+    color: #000000;
+    text-decoration: none;
+    }
+
+    .card a:hover {
+    text-decoration: underline;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <h1>PROMPT SHOP</h1>
+  </div>
+
+To separate the cards within the `card-container` div, you should close the `div` element after each card. Here's the corrected code:
+
+```html
+<div class="card-container">
+  <div class="card">
+    <img class="card-image" src="https://x-prompt.vercel.app/images/marketplace.png" alt="Card Image 1">
+    <div class="card-content">
+      <h3 class="card-title">Card 1</h3>
+      <p class="card-description">This is the description of Card 1. <a href="https://x-prompt.vercel.app/orbitians.html">Click here</a> to learn more.</p>
+      <p class="card-price">$19.99</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-image" src="https://x-prompt.vercel.app/images/marketplace.png" alt="Card Image 2">
+    <div class="card-content">
+      <h3 class="card-title">Card 2</h3>
+      <p class="card-description">This is the description of Card 2. <a href="https://x-prompt.vercel.app/orbitians.html">Click here</a> to learn more.</p>
+      <p class="card-price">$19.99</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-image" src="https://x-prompt.vercel.app/images/marketplace.png" alt="Card Image 1">
+    <div class="card-content">
+      <h3 class="card-title">Card 1</h3>
+      <p class="card-description">This is the description of Card 1. <a href="https://x-prompt.vercel.app/orbitians.html">Click here</a> to learn more.</p>
+      <p class="card-price">$19.99</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-image" src="https://x-prompt.vercel.app/images/marketplace.png" alt="Card Image 2">
+    <div class="card-content">
+      <h3 class="card-title">Card 2</h3>
+      <p class="card-description">This is the description of Card 2. <a href="https://x-prompt.vercel.app/orbitians.html">Click here</a> to learn more.</p>
+      <p class="card-price">$19.99</p>
+    </div>
+  </div>
+   <div class="card">
+    <img class="card-image" src="https://x-prompt.vercel.app/images/marketplace.png" alt="Card Image 2">
+    <div class="card-content">
+      <h3 class="card-title">Card 2</h3>
+      <p class="card-description">This is the description of Card 2. <a href="https://x-prompt.vercel.app/orbitians.html">BUY NOW</a> to learn more.</p>
+      <p class="card-price">$19.99</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-image" src="https://x-prompt.vercel.app/images/marketplace.png" alt="Card Image 1">
+    <div class="card-content">
+      <h3 class="card-title">Card 1</h3>
+      <p class="card-description">This is the description of Card 1. <a href="https://x-prompt.vercel.app/orbitians.html">Click here</a> to learn more.</p>
+      <p class="card-price">$19.99</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-image" src="https://x-prompt.vercel.app/images/marketplace.png" alt="Card Image 2">
+    <div class="card-content">
+      <h3 class="card-title">Card 2</h3>
+      <p class="card-description">This is the description of Card 2. <a href="https://x-prompt.vercel.app/orbitians.html">Click here</a> to learn more.</p>
+      <p class="card-price">$19.99</p>
+    </div>
+  </div>
+</div>
+```
+
+In the updated code, the `div` element with the class `card-content` wraps the card's title, description, and price within each `card` div. This ensures that each card is properly encapsulated and separated from the others within the `card-container` div.
+</div>
+```
+   
+  </div>
+</body>
+</html>
